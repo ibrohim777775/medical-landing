@@ -1,3 +1,18 @@
+@use "base";
+@import url("../fonts/ibm-plex-sans-v19-latin/index.css");
+
+$primary: #0360d9;
+$gray: #2e2e2e;
+$light-blue: #163048;
+$lighter-blue: #e1eeff;
+$dark-blue: #021526;
+
+$title-font-size: 48px;
+$border-radius-size: 20px;
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
 h1 {
   color: blue;
 }

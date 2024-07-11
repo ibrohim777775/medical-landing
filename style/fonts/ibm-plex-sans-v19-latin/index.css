@@ -1,0 +1,32 @@
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./ibm-plex-sans-v19-latin-regular.woff2") format("woff2");
+}
+/* ibm-plex-sans-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./ibm-plex-sans-v19-latin-500.woff2") format("woff2");
+}
+/* ibm-plex-sans-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./ibm-plex-sans-v19-latin-600.woff2") format("woff2");
+}
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./ibm-plex-sans-v19-latin-700.woff2") format("woff2");
+}
