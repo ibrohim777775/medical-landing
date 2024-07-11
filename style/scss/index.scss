@@ -13,6 +13,80 @@ $border-radius-size: 20px;
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
+.container {
+  max-width: 1232px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.hero {
+  background-color: $lighter-blue;
+  min-height: 100dvh;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 49px;
+
+  .logo {
+    a {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $dark-blue;
+      span {
+        color: $primary;
+      }
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 29px;
+
+        &:hover {
+          margin-right: 28px;
+        }
+        &:last-child {
+          margin-right: 0;
+          &:hover {
+            margin-right: 0;
+          }
+        }
+
+        a {
+          font-size: 20px;
+          color: #0d2b46;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            // display: none;
+            content: "";
+            width: 0;
+            height: 2px;
+            border-radius: 20px;
+            background-color: $primary;
+            left: 0;
+            bottom: -8px;
+          }
+          &:hover {
+            color: $primary;
+            font-weight: 500;
+            &::after {
+              // display: block;
+              width: 100%;
+              // left: 0;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 h1 {
   color: blue;
 }
