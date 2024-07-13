@@ -8,10 +8,10 @@ $lighter-blue: #e1eeff;
 $dark-blue: #021526;
 
 $title-font-size: 48px;
-$border-radius-size: 20px;
+$border-radius-size: 50px;
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
 }
 .container {
   max-width: 1232px;
@@ -34,6 +34,7 @@ body {
       font-size: 2rem;
       font-weight: 700;
       color: $dark-blue;
+      cursor: pointer;
       span {
         color: $primary;
       }
@@ -87,6 +88,132 @@ body {
     }
   }
 }
-h1 {
-  color: blue;
+
+/* header_btn_stle*/
+
+.header__btn {
+  .head_btn_1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: $primary;
+    padding: 12px 33px 13px 34px;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: transparent;
+    border: 1px solid $primary;
+    border-radius: $border-radius-size;
+    cursor: pointer;
+  }
+
+  .head_btn_2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    padding: 12px 33px 13px 34px;
+    background-color: $primary;
+    border-radius: $border-radius-size;
+    font-family: "IBM Plex Sans", sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+}
+
+/*header_end*/
+
+.hero_page {
+  .hero_title {
+    position: relative;
+    padding-top: 156px;
+    h1 {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 83.2px;
+      font-family: "IBM Plex Sans", sans-serif;
+
+      span {
+        color: $primary;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20.8px;
+      color: $light-blue;
+      padding-top: 19px;
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+
+    .choose {
+      display: flex;
+      justify-content: space-between;
+      width: 590px;
+      height: 43px;
+      background-color: #fff;
+      border-radius: 50px;
+      padding: 30px 10px 30px 35px;
+      margin-top: 85px;
+
+      .doctor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        p {
+          padding: 0;
+          font-family: "IBM Plex Sans", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20.8px;
+          color: #000000;
+        }
+      }
+
+      .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        p {
+          padding: 0;
+          font-family: "IBM Plex Sans", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20.8px;
+          color: #000000;
+        }
+      }
+
+      .search {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+          padding: 16px;
+          border-radius: 50%;
+          background-color: $primary;
+          cursor: pointer;
+        }
+      }
+    }
+    .doctor_img {
+      position: absolute;
+      top: 0;
+      left: 430px;
+      z-index: 2;
+    }
+    .elipse {
+      position: absolute;
+      top: 0;
+      bottom: 100;
+      left: 559px;
+      z-index: 1;
+    }
+  }
 }

@@ -1,0 +1,97 @@
+@import url("../fonts/ibm-plex-sans-v19-latin/index.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container {
+  max-width: 1232px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #e1eeff;
+  min-height: 100dvh;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 49px;
+}
+.header .logo a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #021526;
+}
+.header .logo a span {
+  color: #0360d9;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  margin-right: 29px;
+}
+.header nav ul li:hover {
+  margin-right: 28px;
+}
+.header nav ul li:last-child {
+  margin-right: 0;
+}
+.header nav ul li:last-child:hover {
+  margin-right: 0;
+}
+.header nav ul li a {
+  font-size: 20px;
+  color: #0d2b46;
+  position: relative;
+}
+.header nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #0360d9;
+  left: 0;
+  bottom: -8px;
+}
+.header nav ul li a:hover {
+  color: #0360d9;
+  font-weight: 500;
+}
+.header nav ul li a:hover::after {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+h1 {
+  color: blue;
+}
+
+/* header_btn_stle*/
+.header_btn .head_btn_1 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #0360d9;
+  padding: 12px 33px 13px 34px;
+}
+
+/*# sourceMappingURL=index.css.map */

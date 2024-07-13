@@ -14,7 +14,7 @@ a {
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
 }
 
 .container {
@@ -39,6 +39,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #021526;
+  cursor: pointer;
 }
 .header .logo a span {
   color: #0360d9;
@@ -82,8 +83,118 @@ body {
   transition: all 0.3s;
 }
 
-h1 {
-  color: blue;
+/* header_btn_stle*/
+.header__btn .head_btn_1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #0360d9;
+  padding: 12px 33px 13px 34px;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: transparent;
+  border: 1px solid #0360d9;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.header__btn .head_btn_2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+  padding: 12px 33px 13px 34px;
+  background-color: #0360d9;
+  border-radius: 50px;
+  font-family: "IBM Plex Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+/*header_end*/
+.hero_page .hero_title {
+  position: relative;
+  padding-top: 156px;
+}
+.hero_page .hero_title h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 83.2px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.hero_page .hero_title h1 span {
+  color: #0360d9;
+}
+.hero_page .hero_title p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #163048;
+  padding-top: 19px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.hero_page .hero_title .choose {
+  display: flex;
+  justify-content: space-between;
+  width: 590px;
+  height: 43px;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 30px 10px 30px 35px;
+  margin-top: 85px;
+}
+.hero_page .hero_title .choose .doctor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.hero_page .hero_title .choose .doctor p {
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #000000;
+}
+.hero_page .hero_title .choose .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.hero_page .hero_title .choose .location p {
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #000000;
+}
+.hero_page .hero_title .choose .search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero_page .hero_title .choose .search img {
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #0360d9;
+  cursor: pointer;
+}
+.hero_page .hero_title .doctor_img {
+  position: absolute;
+  top: 0;
+  left: 430px;
+  z-index: 2;
+}
+.hero_page .hero_title .elipse {
+  position: absolute;
+  top: 0;
+  bottom: 100;
+  left: 559px;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
