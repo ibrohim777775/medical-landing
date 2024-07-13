@@ -21,6 +21,7 @@ body {
 .hero {
   background-color: $lighter-blue;
   min-height: 100dvh;
+  display: grid;
 }
 .header {
   display: flex;
@@ -98,7 +99,6 @@ body {
     line-height: 26px;
     color: $primary;
     padding: 12px 33px 13px 34px;
-    font-family: "IBM Plex Sans", sans-serif;
     background-color: transparent;
     border: 1px solid $primary;
     border-radius: $border-radius-size;
@@ -113,7 +113,6 @@ body {
     padding: 12px 33px 13px 34px;
     background-color: $primary;
     border-radius: $border-radius-size;
-    font-family: "IBM Plex Sans", sans-serif;
     border: none;
     cursor: pointer;
     margin-left: 16px;
@@ -121,18 +120,22 @@ body {
 }
 
 /*header_end*/
-
+.hero_top {
+  width: 100%;
+  height: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: end;
+}
 .hero_page {
   .hero_title {
     position: relative;
+    z-index: 2;
     padding-top: 156px;
     h1 {
       font-weight: 700;
       font-size: 64px;
-      line-height: 83.2px;
-      font-family: "IBM Plex Sans", sans-serif;
-
-      span {
+      line-height: 83.2p span {
         color: $primary;
       }
     }
@@ -142,66 +145,9 @@ body {
       font-size: 16px;
       line-height: 20.8px;
       color: $light-blue;
-      padding-top: 19px;
-      font-family: "IBM Plex Sans", sans-serif;
+      padding-top: 19p;
     }
 
-    .choose {
-      display: flex;
-      justify-content: space-between;
-      width: 590px;
-      height: 43px;
-      background-color: #fff;
-      border-radius: 50px;
-      padding: 30px 10px 30px 35px;
-      margin-top: 85px;
-
-      .doctor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-
-        p {
-          padding: 0;
-          font-family: "IBM Plex Sans", sans-serif;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 20.8px;
-          color: #000000;
-        }
-      }
-
-      .location {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-
-        p {
-          padding: 0;
-          font-family: "IBM Plex Sans", sans-serif;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 20.8px;
-          color: #000000;
-        }
-      }
-
-      .search {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        img {
-          padding: 16px;
-          border-radius: 50%;
-          background-color: $primary;
-          cursor: pointer;
-        }
-      }
-    }
     .doctor_img {
       position: absolute;
       top: 0;
@@ -215,5 +161,109 @@ body {
       left: 559px;
       z-index: 1;
     }
+  }
+  .choose {
+    display: flex;
+    justify-content: space-between;
+    width: 590px;
+    height: 43px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 30px 10px 30px 35px;
+    margin-top: 85px;
+    position: relative;
+    z-index: 2;
+
+    .doctor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      p {
+        padding: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+        color: #000000;
+      }
+    }
+
+    .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      p {
+        padding: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+        color: #000000;
+      }
+    }
+
+    .search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        padding: 16px;
+        border-radius: 50%;
+        background-color: $primary;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.hero_info {
+  background-color: $primary;
+  height: 134px;
+  margin-top: 104px;
+  color: #ffffff;
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    height: 100%;
+  }
+  .doctor_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .doctor_ellipse {
+    position: absolute;
+    z-index: 0;
+    top: -400px;
+    right: -137px;
+    width: 800px;
+    height: 400px;
+  }
+  &-item:nth-child(2) {
+    margin-left: 42px;
+    margin-right: 47px;
+    padding-left: 49px;
+    padding-right: 44px;
+    border-color: #ffffff;
+    border-right: 1px solid;
+    border-left: 1px solid;
+  }
+  &-count {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &-desc {
+    text-transform: capitalize;
+    text-align: center;
   }
 }
