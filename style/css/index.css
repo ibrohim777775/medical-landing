@@ -123,8 +123,10 @@ body {
 .hero_page .hero_title h1 {
   font-weight: 700;
   font-size: 64px;
-  line-height: 83.2p span;
-  line-height-color: #0360d9;
+  line-height: 83.2px;
+}
+.hero_page .hero_title h1 span {
+  color: #0360d9;
 }
 .hero_page .hero_title p {
   font-weight: 400;
