@@ -317,8 +317,11 @@ body {
 
     .card:hover {
       background-color: $primary;
-      color: #ffff;
       border: none;
+      .covid,
+      .card_text {
+        color: #ffffff;
+      }
     }
   }
 }

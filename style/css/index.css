@@ -292,8 +292,11 @@ body {
 }
 .consulting .big-cards .card:hover {
   background-color: #0360d9;
-  color: white;
   border: none;
+}
+.consulting .big-cards .card:hover .covid,
+.consulting .big-cards .card:hover .card_text {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
