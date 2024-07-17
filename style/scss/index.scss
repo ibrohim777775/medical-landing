@@ -311,11 +311,10 @@ body {
         line-height: 20.8px;
       }
     }
-
     :hover {
       background-color: $primary;
       border-color: $primary;
-      transition: background-color 0.4s;
+      // transition: all 0.4s;
       .card_title,
       .card_text {
         color: #ffffff;
@@ -328,8 +327,7 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 80px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin: 150px 0;
 
   .choose_us-right {
     h3 {
@@ -493,11 +491,13 @@ body {
 }
 
 .the-future {
-  display: flex;
-  justify-content: space-between;
-  gap: 66px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 66px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
 
   .future-left {
     .future-h2 {
@@ -548,7 +548,46 @@ body {
 
 .subscribe {
   margin-bottom: 146px;
+  &_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 150px;
+    height: 85px;
+    background-color: #ffffff;
+    margin-top: 37px;
+  }
+  &_input {
+    width: 80%;
+    border: none;
+    outline: none;
+    margin-left: 24px;
+    font-size: 24px;
+    :focus {
+      border: none;
+      outline: none;
+    }
+  }
+  &_btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    margin-right: 17px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
   .sub_block {
+    padding: 0 122px;
     width: 100%;
     height: 350px;
     background-color: $primary;
@@ -563,50 +602,6 @@ body {
       font-weight: 600;
       font-size: 40px;
       line-height: 52px;
-    }
-
-    form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      input {
-        width: 850px;
-        height: 85px;
-        border-top-left-radius: 50px;
-        border-end-start-radius: 50px;
-
-        border: none;
-        outline: none;
-        padding: 20px;
-        margin-top: 37px;
-        font-size: 26px;
-
-        :focus {
-          outline: none;
-          border: none;
-        }
-      }
-
-      .btn_input {
-        width: 106px;
-        height: 85px;
-        border-top-right-radius: 50px;
-        border-end-end-radius: 50px;
-        margin-top: 37px;
-        border: none;
-        background-color: #ffffff;
-        padding-left: 30px;
-
-        .radus {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: $primary;
-          width: 56px;
-          height: 56px;
-          border-radius: 50%;
-        }
-      }
     }
   }
 }

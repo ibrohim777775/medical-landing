@@ -289,7 +289,6 @@ body {
 .consulting .big-cards :hover {
   background-color: #0360d9;
   border-color: #0360d9;
-  transition: background-color 0.4s;
 }
 .consulting .big-cards :hover .card_title,
 .consulting .big-cards :hover .card_text {
@@ -300,8 +299,7 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 80px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin: 150px 0;
 }
 .choose_us-wrapper .choose_us-right h3 {
   font-weight: 700;
@@ -438,7 +436,7 @@ body {
   color: #2e2e2e;
 }
 
-.the-future {
+.the-future .container {
   display: flex;
   justify-content: space-between;
   gap: 66px;
@@ -486,7 +484,46 @@ body {
 .subscribe {
   margin-bottom: 146px;
 }
+.subscribe_form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 150px;
+  height: 85px;
+  background-color: #ffffff;
+  margin-top: 37px;
+}
+.subscribe_input {
+  width: 80%;
+  border: none;
+  outline: none;
+  margin-left: 24px;
+  font-size: 24px;
+}
+.subscribe_input :focus {
+  border: none;
+  outline: none;
+}
+.subscribe_btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #0360d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  margin-right: 17px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.subscribe_btn:hover {
+  transform: scale(1.1);
+}
 .subscribe .sub_block {
+  padding: 0 122px;
   width: 100%;
   height: 350px;
   background-color: #0360d9;
@@ -501,45 +538,6 @@ body {
   font-weight: 600;
   font-size: 40px;
   line-height: 52px;
-}
-.subscribe .sub_block form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.subscribe .sub_block form input {
-  width: 850px;
-  height: 85px;
-  border-top-left-radius: 50px;
-  border-end-start-radius: 50px;
-  border: none;
-  outline: none;
-  padding: 20px;
-  margin-top: 37px;
-  font-size: 26px;
-}
-.subscribe .sub_block form input :focus {
-  outline: none;
-  border: none;
-}
-.subscribe .sub_block form .btn_input {
-  width: 106px;
-  height: 85px;
-  border-top-right-radius: 50px;
-  border-end-end-radius: 50px;
-  margin-top: 37px;
-  border: none;
-  background-color: #ffffff;
-  padding-left: 30px;
-}
-.subscribe .sub_block form .btn_input .radus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0360d9;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
 }
 
 .the-end {
