@@ -50,6 +50,59 @@
     bottom: 50%;
     transition: all 0.2s;
   }
+  .hero .mobile-header {
+    background-color: #9fc2ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .hero .mobile-header .mobile_nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-top: 35px;
+  }
+  .hero .mobile-header .mobile_nav ul li a {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 8px;
+  }
+  .hero .mobile-header .mobile__btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .hero .mobile-header .mobile__btn .head_btn_1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0360d9;
+    padding: 12px 33px 13px 34px;
+    background-color: transparent;
+    border: 1px solid #0360d9;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .hero .mobile-header .mobile__btn .head_btn_2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    padding: 12px 33px 13px 34px;
+    background-color: #0360d9;
+    border: 1px solid #0360d9;
+    border-radius: 50px;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
