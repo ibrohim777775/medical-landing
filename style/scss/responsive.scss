@@ -2,6 +2,8 @@
 @media only screen and (max-width: 900px) {
   .hero {
     .header {
+      position: relative;
+      margin-top: 25px;
       nav,
       &__btn {
         display: none;
@@ -56,22 +58,24 @@
           }
         }
       }
-
-      
-
-     
     }
 
-    .mobile-header{
+    .mobile-header {
+      position: absolute;
+      width: 100%;
+      height: calc(100dvh - 75px);
+      top: 50px;
+      transform: translateX(-150%);
       background-color: #9fc2ee;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding-bottom: 20px;
-      margin-top: 20px;
-      .mobile_nav{
-        ul{
+      transition: transform 0.4s;
+      z-index: 55;
+      .mobile_nav {
+        ul {
           height: 100%;
           display: flex;
           justify-content: center;
@@ -80,141 +84,128 @@
           text-align: center;
           gap: 10px;
           margin-top: 35px;
-          
-          
-          
-  
-          li{
-            a{
+
+          li {
+            a {
               color: #ffff;
               font-weight: 500;
               font-size: 24px;
               line-height: 30px;
-             padding: 8px;
+              padding: 8px;
             }
           }
         }
       }
-      .mobile__btn{
+      .mobile__btn {
         margin-top: 20px;
         display: flex;
-        
+
         gap: 10px;
 
-        .head_btn_1{
+        .head_btn_1 {
           font-weight: 600;
           font-size: 20px;
           line-height: 26px;
-          color:#0360d9;
+          color: #0360d9;
           padding: 12px 33px 13px 34px;
           background-color: transparent;
           border: 1px solid #0360d9;
-          border-radius:50px;
+          border-radius: 50px;
           cursor: pointer;
         }
 
-        .head_btn_2{
+        .head_btn_2 {
           font-weight: 600;
           font-size: 20px;
           line-height: 26px;
-          color:#fff;
+          color: #fff;
           padding: 12px 33px 13px 34px;
-          background-color:#0360d9;
+          background-color: #0360d9;
           border: 1px solid #0360d9;
-          border-radius:50px;
+          border-radius: 50px;
           cursor: pointer;
         }
       }
     }
+    .mobile-header.active {
+      transform: translateX(0);
+      transition: transform 0.4s;
+    }
 
+    .hero_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .doctor_img {
+      z-index: 2;
+      right: 100px;
+      bottom: 134px;
+      height: 550px;
+    }
+    .doctor_ellipse {
+      z-index: 1;
+      right: -17px;
+    }
 
-   .hero_wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    .hero_info {
+    }
 
-
-   
-   }
-   .doctor_img{
-
-    z-index: 2;
-    right: 100px;
-    bottom: 134px;
-    height: 550px;
-  }
-  .doctor_ellipse{
-   z-index: 1;
-    right: -17px;
-  }
-
-  .hero_info{
-    
-  }
-
-  .hero_info-wrapper{
-   margin-top: 734px;
-   z-index: 3;
-    
-  }
-    
+    .hero_info-wrapper {
+      margin-top: 734px;
+      z-index: 3;
+    }
   }
 
-  .consulting{
-    .big-cards{
+  .consulting {
+    .big-cards {
       display: flex;
       justify-content: center;
       align-items: start;
       flex-wrap: wrap;
-
-
     }
   }
-  
-  .choose_us-wrapper{
+
+  .choose_us-wrapper {
     display: flex;
     justify-content: baseline;
     align-items: center;
     flex-wrap: wrap;
-
-   
   }
 
-  .wrappss{
+  .wrappss {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
 
-
-   .members-left{
-    h1{
-     padding-top: 10px !important; 
+    .members-left {
+      h1 {
+        padding-top: 10px !important;
+      }
     }
-   }
 
-   .big_card{
-    margin-top: 70px !important;
-   }
+    .big_card {
+      margin-top: 70px !important;
+    }
   }
 
-  .future-wrappers{
+  .future-wrappers {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .the-end{
+  .the-end {
     height: 100%;
   }
-  .footer-wrapp{
+  .footer-wrapp {
     flex-wrap: wrap;
     padding-top: 20px !important;
   }
 }
 
 @media only screen and (max-width: 600px) {
-
 }

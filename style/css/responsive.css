@@ -1,5 +1,9 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 900px) {
+  .hero .header {
+    position: relative;
+    margin-top: 25px;
+  }
   .hero .header nav, .hero .header__btn {
     display: none;
   }
@@ -51,13 +55,19 @@
     transition: all 0.2s;
   }
   .hero .mobile-header {
+    position: absolute;
+    width: 100%;
+    height: calc(100dvh - 75px);
+    top: 50px;
+    transform: translateX(-150%);
     background-color: #9fc2ee;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
-    margin-top: 20px;
+    transition: transform 0.4s;
+    z-index: 55;
   }
   .hero .mobile-header .mobile_nav ul {
     height: 100%;
@@ -102,6 +112,10 @@
     border: 1px solid #0360d9;
     border-radius: 50px;
     cursor: pointer;
+  }
+  .hero .mobile-header.active {
+    transform: translateX(0);
+    transition: transform 0.4s;
   }
   .hero .hero_wrap {
     display: flex;
