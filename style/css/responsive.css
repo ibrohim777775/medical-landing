@@ -103,6 +103,63 @@
     border-radius: 50px;
     cursor: pointer;
   }
+  .hero .hero_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero .doctor_img {
+    z-index: 2;
+    right: 100px;
+    bottom: 134px;
+    height: 550px;
+  }
+  .hero .doctor_ellipse {
+    z-index: 1;
+    right: -17px;
+  }
+  .hero .hero_info-wrapper {
+    margin-top: 734px;
+    z-index: 3;
+  }
+  .consulting .big-cards {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .choose_us-wrapper {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .wrappss {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrappss .members-left h1 {
+    padding-top: 10px !important;
+  }
+  .wrappss .big_card {
+    margin-top: 70px !important;
+  }
+  .future-wrappers {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .the-end {
+    height: 100%;
+  }
+  .footer-wrapp {
+    flex-wrap: wrap;
+    padding-top: 20px !important;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

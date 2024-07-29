@@ -339,11 +339,11 @@ body {
   background-color: #e1eeff !important;
   height: 616px;
 }
-.our-members .container {
+.our-members .wrappss {
   display: flex;
   justify-content: space-between;
 }
-.our-members .container .members-left h1 {
+.our-members .wrappss .members-left h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 62.4px;
@@ -351,44 +351,44 @@ body {
   padding-top: 156px;
   color: #021526;
 }
-.our-members .container .members-left h1 span {
+.our-members .wrappss .members-left h1 span {
   color: #0360d9;
 }
-.our-members .container .members-left p {
+.our-members .wrappss .members-left p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20.8px;
   color: #2e2e2e;
   margin-top: 22px;
 }
-.our-members .container .members-left .mans {
+.our-members .wrappss .members-left .mans {
   position: relative;
   margin-top: 34px;
 }
-.our-members .container .members-left .mans img {
+.our-members .wrappss .members-left .mans img {
   position: absolute;
 }
-.our-members .container .members-left .mans .mans_img-2 {
+.our-members .wrappss .members-left .mans .mans_img-2 {
   left: 34px;
   z-index: 1;
 }
-.our-members .container .members-left .mans .mans_img-3 {
+.our-members .wrappss .members-left .mans .mans_img-3 {
   left: 69px;
   z-index: 1;
 }
-.our-members .container .members-left .mans .mans_img-4 {
+.our-members .wrappss .members-left .mans .mans_img-4 {
   left: 104px;
   z-index: 1;
 }
-.our-members .container .members-left .mans .mans_img-5 {
+.our-members .wrappss .members-left .mans .mans_img-5 {
   left: 139px;
   z-index: 1;
 }
-.our-members .container .members-left .mans .mans_img-6 {
+.our-members .wrappss .members-left .mans .mans_img-6 {
   left: 174px;
   z-index: 1;
 }
-.our-members .container .members-left .mans p {
+.our-members .wrappss .members-left .mans p {
   position: absolute;
   left: 250px;
   top: -8px;
@@ -398,7 +398,7 @@ body {
   line-height: 20.8px;
   color: #2e2e2e;
 }
-.our-members .container .members-right .big_card {
+.our-members .wrappss .members-right .big_card {
   width: 590px;
   height: 305px;
   border: 1px solid #a8a8a8;
@@ -407,36 +407,36 @@ body {
   background-color: #ffffff;
   padding: 49px 44px 75px 52px;
 }
-.our-members .container .members-right .big_card .left-to-right {
+.our-members .wrappss .members-right .big_card .left-to-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.our-members .container .members-right .big_card .left-to-right .cooper {
+.our-members .wrappss .members-right .big_card .left-to-right .cooper {
   display: flex;
   gap: 18px;
   align-items: center;
 }
-.our-members .container .members-right .big_card .left-to-right .cooper h5 {
+.our-members .wrappss .members-right .big_card .left-to-right .cooper h5 {
   font-weight: 600;
   font-size: 16px;
   line-height: 20.8px;
   color: #2e2e2e;
 }
-.our-members .container .members-right .big_card .left-to-right .cooper p {
+.our-members .wrappss .members-right .big_card .left-to-right .cooper p {
   font-weight: 600;
   font-size: 12px;
   line-height: 15.6px;
   color: #2e2e2e;
 }
-.our-members .container .members-right .big_card .card-lorem {
+.our-members .wrappss .members-right .big_card .card-lorem {
   margin-top: 54px;
   font-size: 16px;
   line-height: 20.8px;
   color: #2e2e2e;
 }
 
-.the-future .container {
+.the-future .future-wrappers {
   display: flex;
   justify-content: space-between;
   gap: 66px;
