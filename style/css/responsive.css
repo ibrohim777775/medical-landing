@@ -8,6 +8,7 @@
     display: none;
   }
   .hero .header__burger {
+    display: block;
     width: 40px;
     height: 30px;
     background: transparent;
@@ -173,6 +174,111 @@
   .footer-wrapp {
     flex-wrap: wrap;
     padding-top: 20px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero .hero_wrap {
+    align-items: flex-start;
+  }
+  .hero_page .hero_title {
+    padding-top: 50px;
+  }
+  .hero_page .hero_title h1 {
+    font-size: 30px;
+    line-height: 125%;
+  }
+  .hero_page .hero_title img {
+    width: 131px;
+  }
+  .hero_page .hero_title p {
+    font-size: 14px;
+  }
+  .hero_page .choose {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .hero_page .choose .doctor p {
+    font-size: 12px;
+  }
+  .hero_page .choose .location p {
+    font-size: 12px;
+  }
+  .hero_page .choose .search img {
+    width: 43px;
+  }
+  .hero_info .hero_info-wrapper {
+    margin-top: 563px;
+  }
+  .hero_info .hero_info-wrapper .hero_info-item:nth-child(2) {
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  .hero_info .hero_info-count {
+    font-size: 24px;
+  }
+  .hero_info .hero_info-desc {
+    font-size: 14px;
+  }
+  .consulting .consulting_title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .consulting .big-cards .card {
+    width: 235px;
+    height: 250px;
+  }
+  .consulting .big-cards .card img {
+    padding: 18px;
+    width: 60px;
+  }
+  .consulting .big-cards .card .card_title {
+    font-size: 18px;
+  }
+  .consulting .big-cards .card .card_text {
+    font-size: 14px;
+  }
+  .choose_us .choose_us-wrapper {
+    margin-top: 50px;
+    gap: 40px;
+  }
+  .choose_us .choose_us-wrapper .choose-link {
+    margin-top: 20px;
+  }
+  .choose_us .choose_us-wrapper .choose-link p {
+    font-size: 12px;
+  }
+  .choose_us .choose_us-wrapper .choose-link img {
+    width: 12px;
+  }
+  .choose_us .choose_us-left img {
+    width: 295px;
+  }
+  .choose_us .choose_us-right h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .choose_us .choose_us-right ul li img {
+    width: 12px;
+  }
+  .choose_us .choose_us-right ul li p {
+    font-size: 12px;
+  }
+  .our-members .wrappss .members-left h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .our-members .wrappss .members-left p {
+    font-size: 14px;
+    line-height: 10 px;
+  }
+  .our-members .wrappss .members-left .mans img {
+    width: 40px;
+    height: 40px;
+  }
+  .our-members .wrappss .members-left .mans p {
+    font-size: 12px;
   }
 }
 

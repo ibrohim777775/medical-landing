@@ -1,5 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 900px) {
+@media only screen and ( max-width: 900px) {
   .hero {
     .header {
       position: relative;
@@ -9,6 +9,7 @@
         display: none;
       }
       &__burger {
+        display: block;
         width: 40px;
         height: 30px;
         background: transparent;
@@ -57,6 +58,8 @@
             }
           }
         }
+
+        
       }
     }
 
@@ -208,4 +211,187 @@
 }
 
 @media only screen and (max-width: 600px) {
+.hero {
+
+  
+  .hero_wrap {
+    align-items: flex-start;
+  }
 }
+.hero_page {
+
+  .hero_title{
+    padding-top: 50px;
+    h1{
+      font-size: 30px;
+      line-height: 125%;
+    }
+
+    img{
+      width: 131px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+  }
+  .choose {
+    width: 100%;
+    margin-top: 35px;
+
+    .doctor{
+      p{
+        font-size: 12px;
+      }
+    }
+    .location{
+      p{
+        font-size: 12px;
+      }
+    }
+    .search{
+      img{
+        width: 43px ;
+      }
+    }
+  }
+
+   
+   
+      
+ }
+
+ .hero_info{
+
+  
+
+  .hero_info-wrapper{
+    margin-top: 563px;
+
+    .hero_info-item:nth-child(2){
+      padding-left: 18px;
+      padding-right: 18px;
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+  }
+   .hero_info-count{
+    font-size: 24px;
+  }
+  .hero_info-desc{
+    font-size: 14px;
+  }
+ }
+
+
+ .consulting{
+  .consulting_title{
+    font-size: 24px;
+    line-height: 30px;
+ }
+
+ .big-cards{
+  .card{
+    width: 235px;
+    height: 250px;
+    img{
+      padding: 18px;
+      width: 60px;
+    }
+    .card_title{
+      font-size: 18px;
+    }
+    .card_text{
+      font-size: 14px;
+    }
+  }
+ }
+ 
+  
+ }
+
+ .choose_us{
+
+  .choose_us-wrapper{
+    margin-top: 50px;
+    gap: 40px;
+
+    .choose-link{
+      margin-top: 20px;
+      p{
+        font-size: 12px;
+      }
+      img{
+        width: 12px;
+      }
+    }
+  }
+  .choose_us-left{
+    img{
+      width: 295px;
+    }
+  }
+  .choose_us-right{
+    h3{
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    ul{
+      li{
+        img{
+          width: 12px;
+        }
+        p{
+          font-size: 12px;
+          
+        }
+      }
+    }
+  }
+ }
+
+
+
+ .our-members{
+  .wrappss{
+    .members-left{
+
+      h1{
+        font-size: 28px;
+        line-height: 30px;
+      }
+
+      p{
+        font-size: 14px;
+        line-height: 10
+        px;
+      }
+
+      .mans{
+        img{
+          width:40px ;
+          height: 40px;
+        }
+        p{
+          font-size: 12px;
+         
+        }
+      }
+    }
+
+    .members-right{
+
+      .big_card{
+       
+      }
+    }
+  }
+ }
+
+}
+
+
+
+
+

@@ -29,6 +29,14 @@ body {
   display: grid;
 }
 
+.mobile-header {
+  display: none;
+}
+
+.header__burger {
+  display: none;
+}
+
 .header {
   display: flex;
   width: 100%;
