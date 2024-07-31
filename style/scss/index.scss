@@ -23,12 +23,25 @@ body {
   min-height: 100dvh;
   display: grid;
 }
+
+
+.mobile-header{
+  display: none;
+
+
+}
+
+  
+.header__burger{
+  display: none;
+}
+
 .header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-top: 49px;
+  margin-top: 49px;
 
   .logo {
     a {
@@ -281,6 +294,7 @@ body {
   .big-cards {
     display: flex;
     justify-content: baseline;
+    
     gap: 20px;
     padding-top: 40px;
     .card {
@@ -375,7 +389,7 @@ body {
   background-color: #e1eeff !important;
   height: 616px;
 
-  .container {
+  .wrappss {
     display: flex;
     justify-content: space-between;
 
@@ -491,7 +505,7 @@ body {
 }
 
 .the-future {
-  .container {
+  .future-wrappers {
     display: flex;
     justify-content: space-between;
     gap: 66px;
