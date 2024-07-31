@@ -99,6 +99,7 @@
   .hero .mobile-header .mobile__btn {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     gap: 30px;
   }
   .hero .mobile-header .mobile__btn .head_btn_1 {
