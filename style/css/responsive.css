@@ -70,6 +70,9 @@
     transition: transform 0.4s;
     z-index: 55;
   }
+  .hero .mobile-header .mobile_nav {
+    width: 100%;
+  }
   .hero .mobile-header .mobile_nav ul {
     height: 100%;
     display: flex;
@@ -77,20 +80,26 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
-    margin-top: 35px;
+    gap: 20px;
+  }
+  .hero .mobile-header .mobile_nav ul li {
+    width: 80%;
   }
   .hero .mobile-header .mobile_nav ul li a {
+    display: block;
+    width: 100%;
     color: white;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #f1f1f1;
   }
   .hero .mobile-header .mobile__btn {
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
-    gap: 10px;
+    gap: 30px;
   }
   .hero .mobile-header .mobile__btn .head_btn_1 {
     font-weight: 600;
@@ -177,8 +186,17 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .hero .doctor_img {
+    right: 0;
+  }
+  .hero .hero_info-wrapper {
+    justify-content: center;
+  }
   .hero .hero_wrap {
     align-items: flex-start;
+  }
+  .consulting .consulting_title {
+    margin-top: 50px;
   }
   .hero_page .hero_title {
     padding-top: 50px;
@@ -226,7 +244,7 @@
     line-height: 30px;
   }
   .consulting .big-cards .card {
-    width: 235px;
+    width: 100%;
     height: 250px;
   }
   .consulting .big-cards .card img {
@@ -241,6 +259,7 @@
   }
   .choose_us .choose_us-wrapper {
     margin-top: 50px;
+    margin-bottom: 50px;
     gap: 40px;
   }
   .choose_us .choose_us-wrapper .choose-link {
@@ -253,7 +272,7 @@
     width: 12px;
   }
   .choose_us .choose_us-left img {
-    width: 295px;
+    width: 100%;
   }
   .choose_us .choose_us-right h3 {
     font-size: 24px;
@@ -263,11 +282,12 @@
     width: 12px;
   }
   .choose_us .choose_us-right ul li p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .our-members .wrappss .members-left h1 {
     font-size: 28px;
     line-height: 30px;
+    margin-top: 30px;
   }
   .our-members .wrappss .members-left p {
     font-size: 14px;
@@ -279,6 +299,22 @@
   }
   .our-members .wrappss .members-left .mans p {
     font-size: 12px;
+  }
+  .our-members .wrappss .members-right .big_card {
+    width: 100%;
+    height: auto;
+    padding: 20px 25px;
+  }
+  .our-members .wrappss .members-right .big_card .cooper img {
+    width: 40px;
+    height: 40px;
+  }
+  .our-members .wrappss .members-right .big_card .stars img {
+    width: 23px;
+    height: 21px;
+  }
+  .our-members .wrappss .members-right .big_card .card-lorem {
+    margin-top: 15px;
   }
 }
 
