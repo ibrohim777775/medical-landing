@@ -398,4 +398,64 @@
       }
     }
   }
+
+  .the-future{
+
+    .future-wrappers{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      gap: 25px;
+      .future-left{
+        .future-h2{
+          font-size:28px;
+          line-height: 30px;
+        }
+      }
+
+      .future-right{
+        img{
+          width: 100%;
+        }
+      }
+    }
+    
+  }
+
+  .subscribe{
+    margin-bottom: 50px;
+    .sub_block{
+      height: auto;
+      padding: 20px 15px;
+      h2{
+        font-size: 28px;
+        line-height: 30px;
+      }
+
+      .subscribe_form{
+        height: 40px;
+      }
+
+      .subscribe_btn{
+        width: 30px;
+        height: 30px;
+        margin-right: 7px;
+      }
+    }
+  }
+
+  .the-end{
+    .footer-wrapp{
+      gap: 20px;
+
+
+      .footer-right{
+        .footer_maps{
+          width: 100% ;
+          height: auto;
+        }
+      }
+    }
+
+   
+  }
 }

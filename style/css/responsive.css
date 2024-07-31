@@ -316,6 +316,44 @@
   .our-members .wrappss .members-right .big_card .card-lorem {
     margin-top: 15px;
   }
+  .the-future .future-wrappers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 25px;
+  }
+  .the-future .future-wrappers .future-left .future-h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .the-future .future-wrappers .future-right img {
+    width: 100%;
+  }
+  .subscribe {
+    margin-bottom: 50px;
+  }
+  .subscribe .sub_block {
+    height: auto;
+    padding: 20px 15px;
+  }
+  .subscribe .sub_block h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .subscribe .sub_block .subscribe_form {
+    height: 40px;
+  }
+  .subscribe .sub_block .subscribe_btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+  }
+  .the-end .footer-wrapp {
+    gap: 20px;
+  }
+  .the-end .footer-wrapp .footer-right .footer_maps {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
